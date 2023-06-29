@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PopupBug.SecondaryWindow"
+             Title="SecondaryWindow">
+    <VerticalStackLayout>
+        <Label Text="Click the button on each of the open windows to replicate the bug."
+               FontSize="16"
+               Margin="0,2,0,8"/>
+        <Button x:Name="btnPopup"
+                Clicked="btnPopup_Clicked"
+                Margin="0,2,0,2"
+                Text="Popup()"/>
+
+        <Button x:Name="btnPopupAsync"
+                Clicked="btnPopupAsync_Clicked"
+                Margin="0,2,0,2"
+                Text="PopupAsync()"/>
+    </VerticalStackLayout>
+</ContentPage>
